@@ -63,3 +63,28 @@ Top part, se zaoblenymi rohy // TODO
 #### Kombinace objímek řídítek
 ![riser_holder](2risers_top_view.png)
 
+#### Spodní část držáku tabletu
+  - Díry ve spodním držáku tabletu, nejsou skrz a slouží k vložení matiček, čili jsou pětihranné
+ 
+
+![tablet_bottom](tablet_bottom_2.png)
+![tablet_bottom](tablet_bottom.png)
+
+#### Kombinace horního a spodního držáku tabletu
+![tablet_holder](tablet_holder.png)
+
+#### Kombinace objímky a spodního držáku tabletu
+![riser_bottom](riser_bottom.png)
+![riser_bottom](riser_bottom2.png)
+![riser_bottom_side_view](riser_bottom_side_view.png)
+
+#### Celý držák
+
+![](holder_complete.png)
+![](holder_complete2.png)
+
+#### Možnost nastevení pozorovacího úhlu
+![](holder_complete_rotated.png)
+![](holder_complete_rotated2.png)
+
+
