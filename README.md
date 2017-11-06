@@ -1,4 +1,7 @@
-# Tablet Bar Mount
+# Tablet Bar Mount (ALPHA VERZE)
+**Toto je alpha verze domacího úkolu, změny vyhrazeny**
+
+**Pokud máte jakékoliv dotazy, či naleznete chyby napište je prosím do Issues k tomuto repozitáři**
 
 ## Zadání
 
@@ -9,7 +12,7 @@ Držák tabletu je potřeba namontovat na představce řídítek, protože to je
 
 Nic podobného neexistuje, i přes poptávku motorkářu, čili po splnění úkolu ho můžete OpenSourcovat a publikovat například na Thingiverse nebo podobných webech a býti slavní... :)
 
-### Představce
+## Představce
 
 ![představce (http://www.lewisportusa.com/Images/vmar/vmar_barmounts_a.jpg)](barmounts.jpg)
 ![řídítka (https://spieglerusa.com/media/catalog/product/cache/1/image/736x460/17f82f742ffe127f42dca9de82fb58b1/i/m/img_1937sm_2_4.jpg)](handlebars.jpg)
@@ -24,18 +27,52 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
 ## Interface modelu
 
 ```
-module tablet_bar_mount() {}
-
+module tablet_bar_mount(
+							holder_width,
+							holder_height,
+							holder_thickness,
+							holder_overlay_thickness,
+							holder_position_x,
+							holder_position_y,
+							tablet_width,	
+							tablet_height,
+							tablet_depth,
+							tablet_screen_width,
+							tablet_screen_height,
+							rounded_corner_radius, 
+							connecting_screw_diameter,
+							cable_cutout_height,
+							cable_cutout_depth,
+							nut_diameter,
+							nut_depth,
+							screw_diameter,
+							screw_head_diameter,
+							screw_head_depth,
+							raiser_width,
+							raiser_height,
+							raiser_depth,
+							raiser_inlet_wall_thickness,
+							raiser_inlet_top_thickness,
+							bar_diameter,
+							bar_location,
+							raisers_spacing
+							) {}
 ```
 
-### Horní část
+## Nefunkční požadavky
+  - Na vytvoření děr pro spojení horní a spodní části držáku musíte pouřít for cyklus
+  - S konstantou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky viz zadání
 
-#### Interface
+## Horní část
+
+### Interface
 
 ```
 module top_part( holder_width,
 					holder_height,
 					holder_overlay_thickness,
+					holder_position_x,
+					holder_position_y,
 					tablet_width,	
 					tablet_height,
 					tablet_depth,
@@ -47,7 +84,7 @@ module top_part( holder_width,
 					cable_cutout_depth) {}
 ```
 
-#### Argumenty
+### Argumenty
   - `holder_width, holder_height` jsou rozměry držáku, tloušťka horní části se odvíjí od `tablet_depth` a `holder_overlay_thickness`
   - `holder_overlay_thickness` je tlouštka modelu mezi displayem a horní částí držáku, čili ta část, která překrývá okraje tabletu, kde není display
   - `tablet_width, tablet_height, tablet_depth` jsou rozměry tabletu
@@ -56,15 +93,12 @@ module top_part( holder_width,
   - `connecting_screw_diameter` průměr šroubu, které jsou drží horní a spodní část držáku
   - `cable_cutout_height` výška vyřezu pro kabely
   - `cable_cutout_depth` tloušťka výřezu pro kabely
+  - `holder_position_x` pozice držáku po ose x
+  - `holder_position_y` pozice držáku po ose y
 
-![top_part](top_part_no_rouded_corners.png)
-![top_part_bottom_view](top_part_no_rouded_corners_bottom_view.png)
-![top_view_side_view](top_part_side_view.png)
-![top_rouded](top_rouded.png)
+## Spodní část
 
-### Spodní část
-
-#### Interface
+### Interface
 
 ```
 module bottom_part( holder_width,
@@ -82,13 +116,15 @@ module bottom_part( holder_width,
 						raiser_inlet_top_thickness,
 						bar_diameter,
 						bar_location,
-						raisers_spacing
+						raisers_spacing,
+						holder_position_x
+						holder_position_y
 						) {}
 ```
 
 
 
-#### Argumenty
+### Argumenty
 
   - `holder_width, holder_height` jsou rozměry držáku
   - `holder_thickness` je tloušťka spodní části držáku ne kterém bude ležet tablet
@@ -105,40 +141,55 @@ module bottom_part( holder_width,
   - `bar_diameter` průměr řídítek
   - `bar_location` je délka změřena od spodní části představce k vrchní bodu řídítek
   - `raisers_spacing` je rozteč středu šroubu představců, nezáleží zda horních či spodních, vzdálenosti horních a spodních šroubů jsou vždy stejné
+  - `holder_position_x` pozice držáku po ose x
+  - `holder_position_y` pozice držáku po ose y
 
 
+## Horní část držáku
 
-#### Objímka představce řídítek
+![top_part](top_part_no_rouded_corners.png)
+![top_part_bottom_view](top_part_no_rouded_corners_bottom_view.png)
+![top_view_side_view](top_part_side_view.png)
+![top_rouded](top_rouded.png)
+
+## Spodní část držáku tabletu
+
+![tablet_bottom](tablet_bottom_2.png)
+![tablet_bottom](tablet_bottom.png)
+
+## Kombinace horního a spodního držáku tabletu
+![tablet_holder](tablet_holder.png)
+
+## Objímka představce řídítek
 
 ![riser_holder](riser1.png)
 ![riser_holder](riser2.png)
 ![riser_holder](riser3.png)
 
-#### Kombinace objímek řídítek
+## Kombinace objímek řídítek
+
 ![riser_holder](2risers_top_view.png)
 
-#### Spodní část držáku tabletu
-  - Díry ve spodním držáku tabletu, nejsou skrz a slouží k vložení matiček, čili jsou pětihranné
- 
-
-![tablet_bottom](tablet_bottom_2.png)
-![tablet_bottom](tablet_bottom.png)
-
-#### Kombinace horního a spodního držáku tabletu
-![tablet_holder](tablet_holder.png)
-
-#### Kombinace objímky a spodního držáku tabletu
+## Kombinace objímky a spodního držáku tabletu
 ![riser_bottom](riser_bottom.png)
 ![riser_bottom](riser_bottom2.png)
 ![riser_bottom_side_view](riser_bottom_side_view.png)
 
-#### Celý držák
+## Celý držák
 
 ![](holder_complete.png)
 ![](holder_complete2.png)
 
-#### Možnost nastevení pozorovacího úhlu
+## Možnost nastevení pozorovacího úhlu
 ![](holder_complete_rotated.png)
 ![](holder_complete_rotated2.png)
+
+## Pozice držáku vůči objímkám představců
+
+### Posun po ose Y
+![](holder_position_y_positive.png)
+
+### Posun po ose X
+![](holder_position_x_positive.png)
 
 
