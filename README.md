@@ -18,6 +18,10 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
 
   - Horní část modelu s výřezem pro display modelu
   - Spodní část modelu, který se dá přídělat na přestavce řídítek
+  - Je nezbytné aby vámi naprogramovaný model byl správně umístěn do souřadnic
+    - Spodní část objímek musí ležet na `z = 0`
+    - Střed rozteče objímek musí ležet na `x = 0` a `y = 0`
+    - **Pokud toto nebude Váš model splňovat tak neprojdete ani jedním testem**
 
 ## Nefunkční požadavky
 
@@ -33,6 +37,7 @@ module tablet_bar_mount(holder_width,
                         holder_overlay_thickness,
                         holder_position_x,
                         holder_position_y,
+                        holder_position_angle,
                         tablet_width,	
                         tablet_height,
                         tablet_depth,
@@ -57,6 +62,9 @@ module tablet_bar_mount(holder_width,
                         raisers_spacing) {}
 ```
 
+Tento interface se dělí na na interface dalších dvou modulů `top_part(...)` a `bottom_part(...)`
+
+
 ## Horní část
 
 ### Interface
@@ -67,6 +75,7 @@ module top_part(holder_width,
                 holder_overlay_thickness,
                 holder_position_x,
                 holder_position_y,
+                holder_position_angle,
                 tablet_width,	
                 tablet_height,
                 tablet_depth,
@@ -87,8 +96,9 @@ module top_part(holder_width,
   - `connecting_screw_diameter` průměr šroubu, které jsou drží horní a spodní část držáku
   - `cable_cutout_height` výška vyřezu pro kabely
   - `cable_cutout_depth` tloušťka výřezu pro kabely
-  - `holder_position_x` pozice držáku po ose x
-  - `holder_position_y` pozice držáku po ose y
+  - `holder_position_x` pozice držáku po ose x, pro kladné hodnoty bude držák posunut doprava v defaultním OpenScad renderu, pro záporné opačným směrem
+  - `holder_position_y` pozice držáku po ose y, pro kladné hodnoty bude držák posunut dolů v defaultním OpenScad renderu, pro záporné opačným směrem
+  - `holder_position_angle` je úhel držáku ve stupních na objímkách představců, mezní testované hodnoty jsou `-45` a `45`, pro kladný úhel bude držák natočen směrem k jezdci na motocyklu, defaultní OpenScad render vypadá tak, že pokud tento argument bude kladný tak se držák bude rotovat tak aby bylo na display lepe vidět.
 
 ## Spodní část
 
@@ -98,6 +108,7 @@ module top_part(holder_width,
  module bottom_part(holder_width,
                     holder_height,
                     holder_thickness,
+                    holder_position_angle,
                     nut_diameter,
                     nut_depth,
                     screw_diameter,
@@ -132,8 +143,11 @@ module top_part(holder_width,
   - `bar_diameter` průměr řídítek
   - `bar_location` je délka změřena od spodní části představce k vrchní bodu řídítek
   - `raisers_spacing` je rozteč středu šroubu představců, nezáleží zda horních či spodních, vzdálenosti horních a spodních šroubů jsou vždy stejné
-  - `holder_position_x` pozice držáku po ose x
-  - `holder_position_y` pozice držáku po ose y
+  - `holder_position_x` pozice držáku po ose x, pro kladné hodnoty bude držák posunut doprava v defaultním OpenScad renderu, pro záporné opačným směrem
+  - `holder_position_y` pozice držáku po ose y, pro kladné hodnoty bude držák posunut dolů v defaultním OpenScad renderu, pro záporné opačným směrem
+  - `holder_position_angle` je úhel držáku ve stupních na objímkách představců, mezní testované hodnoty jsou `-45` a `45`, pro kladný úhel bude držák natočen směrem k jezdci na motocyklu, defaultní OpenScad render vypadá tak, že pokud tento argument bude kladný tak se držák bude rotovat tak aby bylo na display lepe vidět.
+
+Výška objímky představce je měřena ve středu představce a je kombinací argumentů `raiser_depth` a `raiser_inlet_top_thickness`
 
 ## Představce
 
