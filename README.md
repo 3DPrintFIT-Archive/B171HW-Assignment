@@ -124,7 +124,7 @@ module top_part(holder_width,
                     bar_diameter,
                     bar_location,
                     raisers_spacing,
-                    holder_position_x
+                    holder_position_x,
                     holder_position_y) {}
 ```
 
