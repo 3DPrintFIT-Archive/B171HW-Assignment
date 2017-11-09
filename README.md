@@ -131,7 +131,7 @@ module top_part(holder_width,
 ### Argumenty
 
   - `holder_width, holder_height` jsou rozměry držáku
-  - `holder_thickness` je tloušťka spodní části držáku ne kterém bude ležet tablet
+  - `holder_thickness` je tloušťka spodní části držáku na kterém bude ležet tablet
   - `nut_diameter` průměr šestihranné matky
   - `nut_depth` tloušťka matky, která bude zasazena do spodní části držáku
   - `screw_diameter` průměř šroubu, který se pasuje do představce řídítek
