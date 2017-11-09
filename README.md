@@ -139,7 +139,7 @@ module top_part(holder_width,
   - `screw_diameter` průměř šroubu, který se pasuje do představce řídítek
   - `screw_head_diameter` průměr hlavičky šroubu, který pasuje do představce řídítek
   - `screw_head_depth` výška hlavičky šroubu, který bude zapuštěn do spodní části modelu
-  - `screw_spacing` je rozteč šroubů představců, jsou vždy uprostřed objímky představce
+  - `screw_spacing` je rozteč po ose Y, po směru X jsou vždy uprostřed objímky
   - `raiser_width` je šířka reálného představce řídítek
   - `raiser_height` je délka realného představce řídítek 
   - `raiser_depth` je výška reálného představce řídítek
