@@ -23,6 +23,8 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
     - Střed rozteče objímek musí ležet na `x = 0` a `y = 0`
     - Řídítka motocyklu jsou rovnoběžné s osou x
     - Jezdec se na tablet dívá ze záporného směru po ose y (tedy dívá se kladným směrem)
+    - Samostatně použitý `top_part` leží na podložce (`z = 0`), vystředěn podle os x a y
+        - displayem vzhůru, dírami na kabely po směru osy Y
     - **Pokud toto nebude Váš model splňovat, tak neprojdete ani jedním testem**
 
 ## Nefunkční požadavky
@@ -62,11 +64,14 @@ module tablet_bar_mount(holder_width,
                         raiser_inlet_top_thickness,
                         bar_diameter,
                         bar_location,
-                        raisers_spacing) {}
+                        raisers_spacing,
+                        parts_offset) {}
 ```
 
 Tento interface se dělí na na interface dalších dvou modulů `top_part(...)` a `bottom_part(...)`
 
+V případě zavolání `tablet_bar_mount` se vykreslí obě části napozicované dle dalších pravidel a obrázků.
+Mezera mezi nimi je `parts_offset` (měřeno kolmo ke styčným plochám).
 
 ## Horní část
 
@@ -76,10 +81,7 @@ Tento interface se dělí na na interface dalších dvou modulů `top_part(...)`
 module top_part(holder_width,
                 holder_height,
                 holder_overlay_thickness,
-                holder_position_x,
-                holder_position_y,
-                holder_position_angle,
-                tablet_width,	
+                tablet_width,
                 tablet_height,
                 tablet_depth,
                 tablet_screen_width,
@@ -99,9 +101,6 @@ module top_part(holder_width,
   - `connecting_screw_diameter` průměr šroubu, které jsou drží horní a spodní část držáku
   - `cable_cutout_height` výška vyřezu pro kabely
   - `cable_cutout_depth` tloušťka výřezu pro kabely
-  - `holder_position_x` pozice držáku po ose x, pro kladné hodnoty bude držák posunut po kladném směru (doprava v defaultním OpenSCAD renderu), pro záporné opačným směrem
-  - `holder_position_y` pozice držáku po ose y, pro kladné hodnoty bude držák posunut po kladném směru (doprava v defaultním OpenSSCAD renderu), pro záporné opačným směrem
-  - `holder_position_angle` je úhel držáku ve stupních na objímkách představců, mezní testované hodnoty jsou `-45` a `45`, pro kladný úhel bude držák natočen směrem k jezdci na motocyklu, tedy zápornému směru osy y (defaultní OpenSCAD render vypadá tak, že pokud tento argument bude kladný, tak se držák bude rotovat tak, aby bylo na display lépe vidět).
 
 ## Spodní část
 
