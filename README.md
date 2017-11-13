@@ -28,7 +28,7 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
 ## Nefunkční požadavky
 
   - Na vytvoření děr pro spojení horní a spodní části držáku musíte pouřít for cyklus
-  - S konstantou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky viz zadání
+  - S hodnotou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky viz zadání
 
 ## Interface modelu
 
