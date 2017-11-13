@@ -156,6 +156,8 @@ Výška objímky představce je měřena ve středu představce a je kombinací 
 
 Můžete předpokládat, že `raiser_width < raiser_height` a `screw_head_depth < holder_thickness`.
 
+Nejprve aplikujte `holder_position_{x,y}` a potom `holder_position_angle` podle červeného bodu v obrázku níže.
+
 ## Představce
 
 ![představce (http://www.lewisportusa.com/Images/vmar/vmar_barmounts_a.jpg)](./assets/barmounts.jpg)
