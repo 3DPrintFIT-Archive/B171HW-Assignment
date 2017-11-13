@@ -5,12 +5,12 @@
 
 ## Motivace
 
-Nic podobného neexistuje, i přes poptávku motorkářu, čili po splnění úkolu ho můžete OpenSourcovat a publikovat například na Thingiverse nebo podobných webech a býti slavní... :)
+Nic podobného neexistuje, i přes poptávku motorkářů, čili po splnění úkolu ho můžete opensourcovat a publikovat například na Thingiverse nebo podobných webech a býti slavní... :)
 
 ## Zadání
 
-Vaším úkolem je namodelovat držák na tablet na řídítka motocyklu, za účelem použítí tabletu k navigaci.
-Držák tabletu je potřeba namontovat na představce řídítek, protože to je nejbezpečnější a zároveň nejpevnějsí misto, které je jezdci snadno na očích.
+Vaším úkolem je namodelovat držák na tablet na řídítka motocyklu, za účelem použití tabletu k navigaci.
+Držák tabletu je potřeba namontovat na představce řídítek, protože to je nejbezpečnější a zároveň nejpevnější místo, které je jezdci snadno na očích.
 
 ## Model
 
@@ -96,13 +96,13 @@ module top_part(holder_width,
 
 ### Argumenty
   - `holder_width, holder_height` jsou rozměry držáku, tloušťka horní části se odvíjí od `tablet_depth` a `holder_overlay_thickness`
-  - `holder_overlay_thickness` je tlouštka modelu mezi displayem a horní částí držáku, čili ta část, která překrývá okraje tabletu, kde není display
+  - `holder_overlay_thickness` je tloušťka modelu mezi displayem a horní částí držáku, čili ta část, která překrývá okraje tabletu, kde není display
   - `tablet_width, tablet_height, tablet_depth` jsou rozměry tabletu
-  - `tablet_screen_width, tablet_screen_height` jsou rozměry displaye tabletu, čili otvor, ktery bude vyříznut do horní části držáku.
+  - `tablet_screen_width, tablet_screen_height` jsou rozměry displaye tabletu, čili otvor, který bude vyříznut do horní části držáku.
   - `rounded_corner_radius` poloměr vnějšího zakřivení rohů, pokud je argument nulový tak rohy nejsou zaoblené
   - `connecting_screw_diameter` průměr šroubu, které jsou drží horní a spodní část držáku
   - `connecting_screw_offset` pozice šroubu výše, definována nákresem, u modulu `tablet_bar_mount` přejímá hodnotu `nut_offset`
-  - `cable_cutout_height` výška vyřezu pro kabely
+  - `cable_cutout_height` výška výřezu pro kabely
   - `cable_cutout_depth` tloušťka výřezu pro kabely
 
 ## Spodní část
@@ -142,12 +142,12 @@ module top_part(holder_width,
   - `nut_diameter` průměr šestihranné matky (průměr kružnice opsané)
   - `nut_offset` pozice matky (více info na obrázku)
   - `nut_depth` tloušťka matky, která bude zasazena do spodní části držáku
-  - `screw_diameter` průměř šroubu, který se pasuje do představce řídítek
+  - `screw_diameter` průměr šroubu, který se pasuje do představce řídítek
   - `screw_head_diameter` průměr hlavičky šroubu, který pasuje do představce řídítek
   - `screw_head_depth` výška hlavičky šroubu, který bude zapuštěn do spodní části modelu
   - `screw_spacing` je rozteč po ose Y, po směru X jsou vždy uprostřed objímky
   - `raiser_width` je šířka reálného představce řídítek
-  - `raiser_height` je délka realného představce řídítek 
+  - `raiser_height` je délka reálného představce řídítek 
   - `raiser_depth` je výška reálného představce řídítek
   - `raiser_inlet_wall_thickness` je tloušťka objímky představce řídítek
   - `raiser_inlet_top_thickness` je tloušťka horní části objímky představce
@@ -155,7 +155,7 @@ module top_part(holder_width,
   - `bar_location` je délka změřena od spodní části představce k vrchní bodu řídítek
   - `raisers_spacing` je rozteč středu šroubu představců, nezáleží zda horních či spodních, vzdálenosti horních a spodních šroubů jsou vždy stejné
   - `holder_position_x` pozice držáku po ose x, pro kladné hodnoty bude držák posunut po kladném směru (doprava v defaultním OpenSCAD renderu), pro záporné opačným směrem
-  - `holder_position_y` pozice držáku po ose y, pro kladné hodnoty bude držák posunut po kladném směru (doprava v defaultním OpenSSCAD renderu), pro záporné opačným směrem
+  - `holder_position_y` pozice držáku po ose y, pro kladné hodnoty bude držák posunut po kladném směru (doprava v defaultním OpenSCAD renderu), pro záporné opačným směrem
   - `holder_position_angle` je úhel držáku ve stupních na objímkách představců, mezní testované hodnoty jsou `-45` a `45`, pro kladný úhel bude držák natočen směrem k jezdci na motocyklu, tedy zápornému směru osy y (defaultní OpenSCAD render vypadá tak, že pokud tento argument bude kladný, tak se držák bude rotovat tak, aby bylo na display lépe vidět).
 
 Výška objímky představce je měřena ve středu představce a je kombinací argumentů `raiser_depth` a `raiser_inlet_top_thickness`
@@ -216,7 +216,7 @@ Jde o vzdálenost osy šroubu od (někdy pomyslného) rohu obdélníku tvoříc�
 
 Otočení díry na matici je irelevantní (nezajímá nás).
 
-## Možnost nastevení pozorovacího úhlu
+## Možnost nastavení pozorovacího úhlu
 
 ![](./assets/holder_complete_rotated.png)
 ![](./assets/holder_complete_rotated2.png)
