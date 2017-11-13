@@ -58,6 +58,7 @@ module tablet_bar_mount(holder_width,
                         screw_head_diameter,
                         screw_head_depth,
                         screw_spacing,
+                        raisers_spacing,
                         raiser_width,
                         raiser_height,
                         raiser_depth,
@@ -65,7 +66,6 @@ module tablet_bar_mount(holder_width,
                         raiser_inlet_top_thickness,
                         bar_diameter,
                         bar_location,
-                        raisers_spacing,
                         parts_offset) {}
 ```
 
