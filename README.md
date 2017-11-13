@@ -154,6 +154,8 @@ module top_part(holder_width,
 
 Výška objímky představce je měřena ve středu představce a je kombinací argumentů `raiser_depth` a `raiser_inlet_top_thickness`
 
+Můžete předpokládat, že `raiser_width < raiser_height` a `screw_head_depth < holder_thickness`.
+
 ## Představce
 
 ![představce (http://www.lewisportusa.com/Images/vmar/vmar_barmounts_a.jpg)](./assets/barmounts.jpg)
