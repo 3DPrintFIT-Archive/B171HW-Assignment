@@ -52,6 +52,7 @@ module tablet_bar_mount(holder_width,
                         cable_cutout_height,
                         cable_cutout_depth,
                         nut_diameter,
+                        nut_offset,
                         nut_depth,
                         screw_diameter,
                         screw_head_diameter,
@@ -88,6 +89,7 @@ module top_part(holder_width,
                 tablet_screen_height,
                 rounded_corner_radius, 
                 connecting_screw_diameter,
+                connecting_screw_offset,
                 cable_cutout_height,
                 cable_cutout_depth) {}
 ```
@@ -99,6 +101,7 @@ module top_part(holder_width,
   - `tablet_screen_width, tablet_screen_height` jsou rozměry displaye tabletu, čili otvor, ktery bude vyříznut do horní části držáku.
   - `rounded_corner_radius` poloměr vnějšího zakřivení rohů, pokud je argument nulový tak rohy nejsou zaoblené
   - `connecting_screw_diameter` průměr šroubu, které jsou drží horní a spodní část držáku
+  - `connecting_screw_offset` pozice šroubu výše, definována nákresem, u modulu `tablet_bar_mount` přejímá hodnotu `nut_offset`
   - `cable_cutout_height` výška vyřezu pro kabely
   - `cable_cutout_depth` tloušťka výřezu pro kabely
 
@@ -112,6 +115,7 @@ module top_part(holder_width,
                     holder_thickness,
                     rounded_corner_radius,
                     nut_diameter,
+                    nut_offset,
                     nut_depth,
                     screw_diameter,
                     screw_head_diameter,
@@ -136,6 +140,7 @@ module top_part(holder_width,
   - `holder_thickness` je tloušťka spodní části držáku na kterém bude ležet tablet
   - `rounded_corner_radius` poloměr vnějšího zakřivení rohů, pokud je argument nulový tak rohy nejsou zaoblené
   - `nut_diameter` průměr šestihranné matky (průměr kružnice opsané)
+  - `nut_offset` pozice matky (více info na obrázku)
   - `nut_depth` tloušťka matky, která bude zasazena do spodní části držáku
   - `screw_diameter` průměř šroubu, který se pasuje do představce řídítek
   - `screw_head_diameter` průměr hlavičky šroubu, který pasuje do představce řídítek
@@ -200,6 +205,16 @@ Nejprve aplikujte `holder_position_{x,y}` a potom `holder_position_angle` podle 
 
 ![](./assets/holder_complete.png)
 ![](./assets/holder_complete2.png)
+
+## Pozice matic / spojovacích šroubů
+
+Je dána hodnotou `connecting_screw_offset` respektive `nut_offset`, dle červené čáry na obrázku:
+
+![](./assets/nut_distance.png)
+
+Jde o vzdálenost osy šroubu od (někdy pomyslného) rohu obdélníku tvořícího podstavu držáku.
+
+Otočení díry na matici je irelevantní (nezajímá nás).
 
 ## Možnost nastevení pozorovacího úhlu
 
