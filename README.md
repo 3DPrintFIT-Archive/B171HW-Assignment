@@ -16,7 +16,7 @@ Držák tabletu je potřeba namontovat na představce řídítek, protože to je
 
 Vámi namodelovaný model se bude skládat ze dvou objektů.
 
-  - Horní část modelu s výřezem pro display modelu
+  - Horní část modelu s výřezem pro display tabletu
   - Spodní část modelu, který se dá přídělat na přestavce řídítek
   - Je nezbytné aby vámi naprogramovaný model byl správně umístěn do souřadnic
     - Spodní část objímek musí ležet na `z = 0`
