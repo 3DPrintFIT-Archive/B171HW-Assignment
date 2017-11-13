@@ -1,5 +1,6 @@
-# Tablet Bar Mount (ALPHA VERZE)
-**Toto je alpha verze domacího úkolu, změny vyhrazeny**
+# Tablet Bar Mount (BETA VERZE)
+
+**Toto je beta verze domácího úkolu, změny vyhrazeny, koncepce zůstane**
 
 **Pokud máte jakékoliv dotazy, či naleznete chyby napište je prosím do Issues k tomuto repozitáři**
 
