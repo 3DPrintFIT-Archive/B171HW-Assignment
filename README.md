@@ -200,6 +200,7 @@ Výška objímky představce je měřena ve středu představce a je kombinací 
 
 ![](./assets/holder_complete_rotated.png)
 ![](./assets/holder_complete_rotated2.png)
+![](./assets/holder_cut_rotated.png)
 
 ## Pozice držáku vůči objímkám představců
 
