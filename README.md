@@ -182,6 +182,9 @@ Nejprve aplikujte `holder_position_{x,y}` a potom `holder_position_angle` podle 
 ## Spodní část držáku tabletu
 
 ![tablet_bottom](./assets/tablet_bottom_2.png)
+
+Zespodu:
+
 ![tablet_bottom](./assets/tablet_bottom.png)
 
 ## Kombinace horního a spodního držáku tabletu
