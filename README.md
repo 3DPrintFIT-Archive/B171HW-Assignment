@@ -101,7 +101,7 @@ module top_part(holder_width,
   - `tablet_width, tablet_height, tablet_depth` jsou rozměry tabletu
   - `tablet_screen_width, tablet_screen_height` jsou rozměry displaye tabletu, čili otvor, který bude vyříznut do horní části držáku.
   - `rounded_corner_radius` poloměr vnějšího zakřivení rohů, pokud je argument nulový tak rohy nejsou zaoblené
-  - `connecting_screw_diameter` průměr šroubu, které jsou drží horní a spodní část držáku
+  - `connecting_screw_diameter` průměr šroubu, které spojují horní a spodní část držáku
   - `connecting_screw_offset` pozice šroubu výše, definována nákresem, u modulu `tablet_bar_mount` přejímá hodnotu `nut_offset`
   - `cable_cutout_height` výška výřezu pro kabely
   - `cable_cutout_depth` tloušťka výřezu pro kabely
@@ -115,6 +115,7 @@ module top_part(holder_width,
                     holder_height,
                     holder_thickness,
                     rounded_corner_radius,
+                    connecting_screw_diameter,
                     nut_diameter,
                     nut_offset,
                     nut_depth,
@@ -140,6 +141,7 @@ module top_part(holder_width,
   - `holder_width, holder_height` jsou rozměry držáku
   - `holder_thickness` je tloušťka spodní části držáku na kterém bude ležet tablet
   - `rounded_corner_radius` poloměr vnějšího zakřivení rohů, pokud je argument nulový tak rohy nejsou zaoblené
+  - `connecting_screw_diameter` průměr šroubu, které spojují horní a spodní část držáku
   - `nut_diameter` průměr šestihranné matky (průměr kružnice opsané)
   - `nut_offset` pozice matky (více info na obrázku)
   - `nut_depth` tloušťka matky, která bude zasazena do spodní části držáku
