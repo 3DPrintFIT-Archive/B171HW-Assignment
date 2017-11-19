@@ -32,6 +32,7 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
 
   - Na vytvoření děr pro spojení horní a spodní části držáku musíte pouřít for cyklus
   - S hodnotou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky viz zadání
+  - Je zakázáno použít knostrukci `minkowski()` (ve 3D i ve 2D prosotoru)
 
 ## Interface modelu
 
