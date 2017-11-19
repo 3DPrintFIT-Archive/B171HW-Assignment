@@ -1,8 +1,8 @@
-# Tablet Bar Mount (BETA VERZE)
+# Tablet Bar Mount
 
-**Toto je beta verze domácího úkolu, změny vyhrazeny, koncepce zůstane**
+Své repo vytvoříte na https://classroom.github.com/a/my7o3Upb
 
-**Pokud máte jakékoliv dotazy, či naleznete chyby napište je prosím do Issues k tomuto repozitáři**
+**Pokud máte jakékoliv dotazy, či naleznete chyby napište je prosím do Issues k tomuto repozitáři.**
 
 ## Motivace
 
