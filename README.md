@@ -228,6 +228,8 @@ Otočení díry na matici je irelevantní (nezajímá nás).
 ![](./assets/holder_complete_rotated2.png)
 ![](./assets/holder_cut_rotated.png)
 
+Všimněte si, že hlavičky šroubů jsou zanořené podle neotočeného modelu (znázorněného zde pomocí OpenSCAD modifikátoru `%`). Je na uživateli modulu, aby v případě natočení zvolil vhodnou hloubku zanoření tak, aby šrouby nepřekážely. Nesnažte se šrouby zanořovat kvůli naklopení více (či snad méně). Také si všimněte, že `raiser_inlet_top_thickness` platí pouze na středu modelu podle osy y. Horní stěna objímky představce nerotuje společně s držákem. Pouze se vyplní vniklá mezera nahoře (a vyřízne vzniklá překážka dole).
+
 ## Pozice držáku vůči objímkám představců
 
 ### Posun po ose Y
