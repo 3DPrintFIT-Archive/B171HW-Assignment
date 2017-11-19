@@ -32,7 +32,7 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
 
   - S hodnotou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky (viz zadání)
     - Manipulace s jinými `$f*` hodnotami je zakázána
-  - Je zakázáno použít knostrukci `minkowski()` (ve 3D i ve 2D prosotoru)
+  - Je zakázáno použít konstrukci `minkowski()` (ve 3D i ve 2D prosotoru)
   - Není doporučováno používat rekurzi, ani to k vyřešení úkolu není zapotřebí
   - Využití externích knihoven (včetně knihovny MCAD) je zakázáno
   - Pokud je něco **zakázáno**, vede použití k tomu, že **neprojdou testy** a dostáváte **0 bodů**
