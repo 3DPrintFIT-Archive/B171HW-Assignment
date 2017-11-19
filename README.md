@@ -30,9 +30,16 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
 
 ## Nefunkční požadavky
 
-  - Na vytvoření děr pro spojení horní a spodní části držáku musíte pouřít for cyklus
-  - S hodnotou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky viz zadání
+  - S hodnotou `$fn` můžete pracovat pouze v případě vytvoření šestihranných děr pro matky (viz zadání)
+    - Manipulace s jinými `$f*` hodnotami je zakázána
   - Je zakázáno použít knostrukci `minkowski()` (ve 3D i ve 2D prosotoru)
+  - Není doporučováno používat rekurzi, ani to k vyřešení úkolu není zapotřebí
+  - Využití externích knihoven (včetně knihovny MCAD) je zakázáno
+  - Pokud je něco **zakázáno**, vede použití k tomu, že **neprojdou testy** a dostáváte **0 bodů**
+  - Váš kód musí splňovat určitou kvalitu (**tato část tvoří 5 bodů z celkových 40 možných**)
+    - Opakování v kódu je špatně, vždy použijte moduly a cykly
+    - Bulharské konstanty musí být doplněny o vysvětlující komentář
+    - Dodžte logickou úroveň odsazení
 
 ## Interface modelu
 
