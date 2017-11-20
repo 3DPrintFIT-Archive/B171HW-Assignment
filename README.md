@@ -27,7 +27,7 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
     - Řídítka motocyklu jsou rovnoběžné s osou x
     - Jezdec se na tablet dívá ze záporného směru po ose y (tedy dívá se kladným směrem)
     - Samostatně použitý `top_part` leží na podložce (`z = 0`), vystředěn podle os x a y
-        - displayem vzhůru, dírami na kabely po směru osy Y
+        - displayem vzhůru, dírami na kabely po směru osy x
     - **Pokud toto nebude Váš model splňovat, tak neprojdete ani jedním testem**
 
 ## Nefunkční požadavky
