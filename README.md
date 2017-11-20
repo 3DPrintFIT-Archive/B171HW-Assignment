@@ -4,7 +4,7 @@ Své repo vytvoříte na https://classroom.github.com/a/my7o3Upb
 
 Deadline je **7.1.2018** 23:59 CET.
 
-**Pokud máte jakékoliv dotazy, či naleznete chyby napište je prosím do Issues k tomuto repozitáři.**
+**Pokud máte jakékoliv dotazy, či naleznete chyby, napište je prosím do Issues k tomuto repozitáři.**
 
 ## Motivace
 
