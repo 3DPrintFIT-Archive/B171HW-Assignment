@@ -41,7 +41,7 @@ Vámi namodelovaný model se bude skládat ze dvou objektů.
   - Váš kód musí splňovat určitou kvalitu (**tato část tvoří 5 bodů z celkových 30 možných**)
     - Opakování v kódu je špatně, vždy použijte moduly a cykly
     - Bulharské konstanty musí být doplněny o vysvětlující komentář
-    - Dodžte logickou úroveň odsazení
+    - Dodržte logickou úroveň odsazení
 
 ## Interface modelu
 
