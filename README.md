@@ -2,7 +2,7 @@
 
 Své repo vytvoříte na https://classroom.github.com/a/my7o3Upb
 
-Deadline je **7.1.2018** 23:59 CET.
+Deadline je **7.1.2018** 23:59 CET. Vypracovaný úkol **nahrajte do repozitáře vytvořeného na odkaze výše**. Nikam jinam jej neposílejte, jako odevzdání se počítá to, co bude ve vašem repozitáři (ve výchozí větvi (většinou `master`)) v momentu deadlinu.
 
 **Pokud máte jakékoliv dotazy, či naleznete chyby, napište je prosím do Issues k tomuto repozitáři.**
 
@@ -247,5 +247,3 @@ Všimněte si, že hlavičky šroubů jsou zanořené podle neotočeného modelu
 
 ### Posun po ose X
 ![](./assets/holder_position_x_positive.png)
-
-
