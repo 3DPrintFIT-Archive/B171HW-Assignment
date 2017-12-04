@@ -2,7 +2,7 @@
 
 Své repo vytvoříte na https://classroom.github.com/a/my7o3Upb
 
-Deadline je **7.1.2018** 23:59 CET. Vypracovaný úkol nikam neposílejte, jako odevzdání se počíta to co bude ve vašem repozitáři v momentu deadlinu.
+Deadline je **7.1.2018** 23:59 CET. Vypracovaný úkol **nahrajte do repozitáře vytvořeného na odkaze výše**. Nikam jinam jej neposílejte, jako odevzdání se počítá to, co bude ve vašem repozitáři (ve výchozí větvi (většinou `master`)) v momentu deadlinu.
 
 **Pokud máte jakékoliv dotazy, či naleznete chyby, napište je prosím do Issues k tomuto repozitáři.**
 
